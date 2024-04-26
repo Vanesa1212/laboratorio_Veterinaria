@@ -1,13 +1,163 @@
-body{
+body {
     background-color: azure;
-}
-
-.container{
+    margin: 60px;
+  }
+  
+  .contenedor {
     background-color: aqua;
-    padding: 10%;
+    padding: 5%;
+    border-radius: 20px 20px 0 0;
+    display: flex; /* Contenedor como flexbox */
+  }
+  
+  .imagenlogo {
+    float: right; /* Eliminado float:right para ubicación correcta */
+    width: 50%;
+  }
+  
+  .contenido1 {
+    width: 50%; /* Igualar ancho de la imagen para un diseño equilibrado */
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center; /* Centrar elementos del menú horizontalmente */
+    width: 100%; /* Abarcar todo el ancho del contenedor */
+    background-color: #1c4a48;
+    border-radius: 0 0 20px 20px;
+    font-size: 20px;
+    margin-top: 0; /* Agregar espacio entre contenedor y menú */
+  }
+  
+  .menu li {
+    color: #ffffff;
+    list-style: none;
+    margin: 45px; /* Ajustar espacio entre elementos del menú según sea necesario */
+  }
+  
+  li {
+    display: inline; /* Sobrescribir predeterminado (no necesario aquí) */
+    list-style-type: none;
+    color: white;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  .contenedor-tarjeta{
+    display: flex;
+  }
+  
+  .tarjeta1 {
+    margin: 5% 5% 5% 0%;
+    padding: 2%;
+    background-color: bisque;
+    overflow: hidden; /* Contener contenido flotante */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .imagen {
+    padding: 0;
+    float: right;/* Ajustar el ancho de la imagen */
+  }
+  
+  .contenido2 {
+    margin-right: 30%; /* Espacio para la imagen */
+    padding: 20px 20px 20px 20px;
+  }
+
+  .tarjeta2 {
+    margin: 0% 5% 5% 0%;
+    padding: 2%;
+    background-color: bisque;
+    overflow: hidden; /* Contener contenido flotante */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+.tarjeta-formulario{
+    width: 55%;
+    background-color: aquamarine;
+    margin: 3% 0% 3% 0%;
     border-radius: 20px;
+    padding: 2%;
+    align-items: center;
 }
 
-ul{
-    list-style: none;
+.titulo{
+    text-align: center;
 }
+
+.grupo-campo{
+    align-items: center;
+}
+
+footer {  
+    color: #ffffff;  
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centrar elementos del menú horizontalmente */
+    width: 100%; /* Abarcar todo el ancho del contenedor */
+    background-color: #1c4a48;
+    border-radius: 0 0 20px 20px;
+    font-size: 20px;
+    margin-top: 0; /* Agregar espacio entre contenedor y menú */
+  }
+
+footer p{
+    font-size: 20px;
+}
+
+.formulario-cita {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formulario-cita h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #formulario-cita {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .grupo-campo {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .grupo-campo label {
+    width: 25%;
+    text-align: right;
+    padding-right: 10px;
+  }
+  
+  .grupo-campo input,
+  .grupo-campo select {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn-validar {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .btn-validar:hover {
+    background-color: #0056b3;
+  }

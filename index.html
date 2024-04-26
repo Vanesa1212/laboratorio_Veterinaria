@@ -1,37 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Laboratorio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Laboratorio</title>
 </head>
 <body>
-    <div class="container">
-        <div class="imagenlogo">
-            <img src="img/imglogo.png" alt="logo">
-            <div>
-                <h3>CENTRO VETERINARIO</h3>
-                <h1>Caninos y Felinos</h1>
+  <div class="contenedor">
+    <div class="imagenlogo">
+      <img src="img/imglogo.png" alt="logo" width="300px" height="200px">
+    </div>
+    <div class="contenido1">
+      <h3>CENTRO VETERINARIO</h3>
+      <h1>Caninos y Felinos</h1>
+    </div>
+  </div>
 
-                <ul>
-                    <li>.Servicios.</li>
-                    <li>.Productos.</li>
-                    <li>.Guardería.</li>
-                    <li>.Promociones.</li>
-                </ul>
-            </div>
+  <div class="menu">
+    <ul>
+      <li>.Servicios.</li>
+      <li>.Productos.</li>
+      <li>.Guardería.</li>
+      <li>.Promociones.</li>
+    </ul>
+  </div>
+
+  <div class="contenedor-tarjeta">
+    <div class="tarjetas-informacion">
+      <div class="tarjeta1">
+        <div class="imagen">
+          <img src="img/imglogo.png" alt="dfsdfs" width="250px">
         </div>
+        <div class="contenido2">
+          <h2>Cuidados y educación para tu perro</h2>
+          <p>Lorem ipsum dolor situllam asperiores  deleniti quaerat. Eveniet quos recusandae nisi atque sapiente id odio! Dignissimos suscipit officia eum?</p>
+        </div>
+      </div>
+      <div class="tarjeta2">
+        <div class="imagen">
+          <img src="img/imglogo.png" alt="dfsdfs" width="250px">
+        </div>
+        <div class="contenido2">
+          <h2>Cuidados y educación para tu gato</h2>
+          <p>Lorem ipsum dolor situllam asperiores  deleniti quaerat. Eveniet quos recusandae nisi atque sapiente id odio! Dignissimos suscipit officia eum?</p>
+        </div>
+      </div>
     </div>
-
-    <div class="tarjeta">
-        <div class="titulo">Cuidados y educacion para tu perro</div>
-            <div class="imagen">
-                <img src="..." alt="...">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque obcaecati reiciendis doloribus, ullam asperiores minima incidunt deleniti quaerat. Eveniet quos recusandae nisi atque sapiente id odio! Dignissimos suscipit officia eum?
-            </div>
-        
+    <div class="tarjeta-formulario">
+      <h2 class="titulo">Solicitar cita médica</h2>
+      <form id="formulario-cita">
+        <div class="grupo-campo">
+          <label for="nombre-mascota">Mascota:</label>
+          <input type="text" id="nombre-mascota" name="nombre-mascota" required><br>
+        </div>
+        <div class="grupo-campo">
+          <label for="edad-mascota">Edad:</label>
+          <input type="number" id="edad-mascota" name="edad-mascota" required><br>
+        </div>
+        <div class="grupo-campo">
+          <label for="raza-mascota">Raza:</label>
+          <input type="text" id="raza-mascota" name="raza-mascota" required><br>
+        </div>
+        <div class="grupo-campo">
+          <label for="fecha-cita">Fecha:</label>
+          <input type="date" id="fecha-cita" name="fecha-cita" required><br>
+        </div>
+        <div class="grupo-campo">
+          <label for="hora-cita">Hora:</label>
+          <input type="time" id="hora-cita" name="hora-cita" required><br>
+        </div>
+        <div class="grupo-campo">
+          <label for="nombre-amo">Dueño:</label>
+          <input type="text" id="nombre-amo" name="nombre-amo" required><br>
+        </div><br>
+        <button type="submit" class="btn-validar">Validar cita</button>
+      </form>
     </div>
+  </div>
+  <footer>
+    <p>Contactenos<br>Linea gratuita 018000-00001<br>Correo: preguntas@caninosyfelinos.com</p>
+</footer>
 </body>
 </html>
